@@ -21,7 +21,7 @@ server.get('/', (req, res) => {
     res.send('Express Server')
 })
 
-server.get('/', (req, res) => {
+server.get('/*', (req, res) => {
     const initialState = {
         location: req.url
     }
