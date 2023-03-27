@@ -5,7 +5,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "yarn run watch:server && yarn run watch:client",
+    "dev": "yarn run watch:server & yarn run watch:client",
     "watch:server": "nodemon server/server.js",
     "watch:client": "webpack serve --config webpack.dev.js",
     "build": "NODE_ENV=production webpack --config webpack.prod.js --progress --profile"
